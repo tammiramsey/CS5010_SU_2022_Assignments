@@ -1,29 +1,18 @@
-#include <iostream>
-using namespace std;
+for (int i=0; i <= (input1Length -1); ++i) {
+		        if ((userInput1.at(i)) != (userInput2.at(i))) {
+			        hammingDistance += 1;
+		        }
+	        }
+	cout << "Hamming Distance is : " << hammingDistance << endl;
 
-// hamming distance between two strings (str1 & srt2)
-int main()
-{
-    string str1, str2;
-    cin >> str1;
-    cin >> str2;
-    
-    //index starts at 0
-    int count = 0;
-    
-    if (str1.length() == str2.length())
-    {
-        for (int i=0; i<str1.length(); i++)
-        {
-            if (str1(i) != str2(i))
-            {
-                count += 1;
-            }
+            break;
+        
         }
-        cout >> count >> endl; 
-    } else
-    {
-        cout << "Warning! Strings are different lengths. Try again." << endl;
+        if (input1Length != input2Length) {
+            cout << "WARNING: Inputs must be the same length to compare" << endl;
+        }
+
     }
+
     return 0;
 }
